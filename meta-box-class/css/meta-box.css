@@ -75,3 +75,13 @@
 ----------------------------------------------- */
 .conditinal_container{border: 1px solid #ddd;}
 .conditinal_container table{width: 100%;}
+
+/* =Separator Block
+----------------------------------------------- */
+.separator td {padding: 0;}
+.separator hr {display: block;width: 100%;border: 0;border-top: 1px solid #dfdfdf;border-bottom: 1px solid #fff;clear: both;}
+
+/* =Slider UI
+----------------------------------------------- */
+.at-slider {}
+.at-slider .slider-ui {margin-top: 10px;width: 79%;margin-right: 5px;float: left;}
