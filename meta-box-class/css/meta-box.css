@@ -52,9 +52,19 @@
 
 /* =Repater Block
 ----------------------------------------------- */
-/* inline */
+.at_re_sort_highlight{min-height: 54px; background-color: #eee; margin: 0 0 20px;}
+.re-control-clear{clear: both; display: block;}
+.at_re_sort_handle{cursor: move;}
+.re-control{float: right; padding: 5px;}    
+.at-inline{line-height: 1 !important;}
+.at-inline .at-field{border: 0px !important;}
 .at-inline label{font-size: 12px !important;}
-.at-inline textarea{height: 130px;width: 200px;}
+.at-inline .at-label{margin: 0 0 1px !important;}
+.at-inline .at-text{width: 70px;}
+.at-inline textarea{height: 130px; width: 200px;}
+.at-inline .at-textarea{width: 100px; height: 75px;}
+.at-repeater-block{background-color: #f5f5f5; border: 1px solid #ddd; margin: 0 0 20px; min-height: 50px}
+.at-repeater-block-title{margin: 10px;}
 
 /* code Editor */
 .CodeMirror{
