@@ -476,18 +476,6 @@ class AT_Meta_Box {
               });
           });
         </script>';
-    echo '<br/><style>
-.at_re_sort_highlight{min-height: 55px; background-color: #EEEEEE; margin: 2px;}
-.re-control-clear{clear: both; display: block;}
-.at_re_sort_handle{cursor: move;}
-.re-control{float: right; padding: 5px;}    
-.at-inline{line-height: 1 !important;}
-.at-inline .at-field{border: 0px !important;}
-.at-inline .at-label{margin: 0 0 1px !important;}
-.at-inline .at-text{width: 70px;}
-.at-inline .at-textarea{width: 100px; height: 75px;}
-.at-repeater-block{background-color: #FFFFFF;border: 1px solid;margin: 2px; min-height: 50px}
-</style>';
     $this->show_field_end($field, $meta);
   }
   
