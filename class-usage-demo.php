@@ -150,7 +150,23 @@ if (is_admin()){
         'fields' => $Conditinal_fields,
         'std'    => false
       ));
-  
+
+  // separator field 
+  $my_meta2->addSeparator();
+  // slider field
+  $my_meta2->addSlider($prefix.'slider_field_id', 
+    array ( 
+        'name' => __('My Slider','mmb'), 
+        'info' => __('Information that is above the Slider UI','mmb'),
+        'desc' => __('information that is below the Slider UI','mmb'),
+        'min' => '0', // value minimal
+        'max' => '100', // value maximal
+        'range' => 'asc', // asc (min) | desc (max) | none (false (default) )
+        'step' => '5', // Determines the size or amount of each interval or step the slider takes between the min and max. The full specified value range of the slider (max - min) should be evenly divisible by the step.
+        'value' => '' // default value, optional
+    ) 
+  );
+
   /*
    * Don't Forget to Close up the meta box Declaration 
    */
