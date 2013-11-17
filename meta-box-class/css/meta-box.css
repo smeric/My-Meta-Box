@@ -70,3 +70,8 @@
 .CodeMirror{
 	background-color: #fff;
 }
+
+/* =Conditional Block
+----------------------------------------------- */
+.conditinal_container{border: 1px solid #ddd;}
+.conditinal_container table{width: 100%;}
