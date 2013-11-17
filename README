@@ -35,6 +35,8 @@ Fixed issue #94. (is it ???)
 Fixed typo in css class name for repeater fields.
 Moved repeater fields css declaration to main css file.
 Minor changes to css declarations for repeater and conditonal fields. 
+Added slider & separator fields (F. Kalicki proposal)
+Fixed typo in class-usage-demo.php for radio buttons std value.
 
 = 3.1.0 =
 * All uploads hadled by wordpress and not by the class
