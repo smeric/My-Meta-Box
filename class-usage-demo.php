@@ -152,7 +152,7 @@ if (is_admin()){
       ));
 
   // separator field 
-  $my_meta2->addSeparator();
+  $my_meta2->addSeparator($prefix.'separator_field_id');
   // slider field
   $my_meta2->addSlider($prefix.'slider_field_id', 
     array ( 
