@@ -433,7 +433,7 @@ class AT_Meta_Box {
     
     //create all fields once more for js function and catch with object buffer
     ob_start();
-    echo '<div class="at-repater-block"><table class="repeater-table">';
+    echo '<div class="at-repeater-block"><table class="repeater-table">';
     if ($field['inline']){
       echo '<tr class="at-inline" VALIGN="top">';
     } 
