@@ -202,7 +202,7 @@ if (is_admin()){
   //select field
   $my_meta3->addSelect($prefix.'select_field_id',array('selectkey1'=>'Select Value1','selectkey2'=>'Select Value2'),array('name'=> 'My select ', 'std'=> array('selectkey2')));
   //radio field
-  $my_meta3->addRadio($prefix.'radio_field_id',array('radiokey1'=>'Radio Value1','radiokey2'=>'Radio Value2'),array('name'=> 'My Radio Filed', 'std'=> array('radionkey2'),'group' => 'end'));
+  $my_meta3->addRadio($prefix.'radio_field_id',array('radiokey1'=>'Radio Value1','radiokey2'=>'Radio Value2'),array('name'=> 'My Radio Filed', 'std'=> array('radiokey2'),'group' => 'end'));
 
   /*
    * Don't Forget to Close up the meta box Declaration 
