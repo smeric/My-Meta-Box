@@ -456,7 +456,9 @@ class AT_Meta_Box {
     if ($field['inline']){
       echo '</tr>';
     } 
-    echo '</table><img src="'.$plugin_path.'/images/remove.png" alt="'.__('Remove','mmb').'" title="'.__('Remove','mmb').'" id="remove-'.$field['id'].'"></div>';
+    echo '</table>
+        <span class="re-control"><img src="'.$plugin_path.'/images/remove.png" alt="'.__('Remove','mmb').'" title="'.__('Remove','mmb').'" id="remove-'.$field['id'].'"></span>
+        <span class="re-control-clear"></span></div>';
     $counter = 'countadd_'.$field['id'];
     $js_code = ob_get_clean ();
     $js_code = str_replace("\n","",$js_code);
@@ -471,11 +473,11 @@ class AT_Meta_Box {
             jQuery(this).before(\''.$js_code.'\');            
             update_repeater_fields();
           });
-              jQuery("#remove-'.$field['id'].'").live(\'click\', function() {
-                  jQuery(this).parent().remove();
-              });
+          jQuery("#remove-'.$field['id'].'").live(\'click\', function() {
+            jQuery(this).parent().parent().remove();
           });
-        </script>';
+        });
+      </script>';
     $this->show_field_end($field, $meta);
   }
   
