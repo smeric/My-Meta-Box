@@ -30,8 +30,9 @@ Reapater field can't handle Posts and Taxonomy for now (and maybe even others).
 Changelog
 ---------
 = 3.1.1 = 
-Fixed issue #92.
+Fixed issue #96.
 Fixed issue #94. (is it ???)
+Fixed issue #92.
 Fixed typo in css class name for repeater fields.
 Moved repeater fields css declaration to main css file.
 Minor changes to css declarations for repeater and conditonal fields. 
