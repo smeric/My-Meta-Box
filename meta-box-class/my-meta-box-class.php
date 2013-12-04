@@ -168,6 +168,26 @@ class AT_Meta_Box {
       
       // Enqueue Meta Box Scripts
       wp_enqueue_script( 'at-meta-box', $plugin_path . '/js/meta-box.js', array( 'jquery' ), null, true );
+      wp_localize_script( 'at-meta-box', 'objectL10n', array(
+            'dayNames' => __( "'Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'",'mmb' ),
+            'dayNamesMin' => __("'Su','Mo','Tu','We','Th','Fr','Sa'", 'mmb'),
+            'dayNamesShort' => __("'Sun','Mon','Tue','Wed','Thu','Fri','Sat'", 'mmb'),
+            'monthNames' => __("'January','February','March','April','May','June', 'July','August','September','October','November','December'", 'mmb'),
+            'monthNamesShort' => __("'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'", 'mmb'),
+            'nextText' => __('Next', 'mmb'),
+            'prevText' => __('Prev', 'mmb'),
+            'currentText' => __('Today', 'mmb'),
+            'closeText' => __('Done', 'mmb'),
+            'clearText' => __('Clear', 'mmb')
+            'timeOnlyTitle' => __('Choose Time', 'mmb'),
+            'timeText' => __('Time', 'mmb'),
+            'hourText' => __('Hour', 'mmb'),
+            'minuteText' => __('Minute', 'mmb'),
+            'secondText' => __('Second', 'mmb'),
+            'millisecText' => __('Millisecond', 'mmb'),
+            'timezoneText' => __('Timezone', 'mmb'),
+            'currentTimeText' => __('Now', 'mmb'),
+      )); 
 
       // Make upload feature work event when custom post type doesn't support 'editor'
       if ($this->has_field('image') || $this->has_field('file')){
@@ -770,9 +790,9 @@ class AT_Meta_Box {
     echo "<input type='hidden' name='{$name}[id]' value='{$value['id']}'/>";
     echo "<input type='hidden' name='{$name}[url]' value='{$value['url']}'/>";
     if ($has_file)
-      echo "<input type='button' class='{$multiple} button simplePanelfileUploadclear' id='{$id}' value='Remove File' data-mime_type='{$type}' data-ext='{$ext}'/>";
+      echo "<input type='button' class='{$multiple} button simplePanelfileUploadclear' id='{$id}' value='".__('Remove File','mmb')."' data-mime_type='{$type}' data-ext='{$ext}'/>";
     else
-      echo "<input type='button' class='{$multiple} button simplePanelfileUpload' id='{$id}' value='Upload File' data-mime_type='{$type}' data-ext='{$ext}'/>";
+      echo "<input type='button' class='{$multiple} button simplePanelfileUpload' id='{$id}' value='".__('Upload File','mmb')."' data-mime_type='{$type}' data-ext='{$ext}'/>";
 
     $this->show_field_end( $field, $meta );
   }
@@ -806,9 +826,9 @@ class AT_Meta_Box {
     echo "<input type='hidden' name='{$name}[id]' value='{$value['id']}'/>";
     echo "<input type='hidden' name='{$name}[url]' value='{$value['url']}'/>";
     if ($has_image)
-      echo "<input class='{$multiple} button  simplePanelimageUploadclear' id='{$id}' value='Remove Image' type='button'/>";
+      echo "<input class='{$multiple} button  simplePanelimageUploadclear' id='{$id}' value='".__('Remove Image','mmb')."' type='button'/>";
     else
-      echo "<input class='{$multiple} button simplePanelimageUpload' id='{$id}' value='Upload Image' type='button'/>";
+      echo "<input class='{$multiple} button simplePanelimageUpload' id='{$id}' value='".__('Upload Image','mmb')."' type='button'/>";
     $this->show_field_end( $field, $meta );
   }
   
