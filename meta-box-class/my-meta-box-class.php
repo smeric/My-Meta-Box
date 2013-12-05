@@ -178,7 +178,7 @@ class AT_Meta_Box {
             'prevText' => __('Prev', 'mmb'),
             'currentText' => __('Today', 'mmb'),
             'closeText' => __('Done', 'mmb'),
-            'clearText' => __('Clear', 'mmb')
+            'clearText' => __('Clear', 'mmb'),
             'timeOnlyTitle' => __('Choose Time', 'mmb'),
             'timeText' => __('Time', 'mmb'),
             'hourText' => __('Hour', 'mmb'),
