@@ -167,7 +167,20 @@ var _metabox_fields = {
         else
           aampm = false;
 
-        $this.timepicker( { showSecond: true, timeFormat: format, ampm: aampm } );
+        $this.timepicker({
+			    showSecond: true,
+			    timeFormat: format,
+			    ampm: aampm,
+			    timeOnlyTitle: objectL10n.timeOnlyTitle,
+			    timeText: objectL10n.timeText,
+			    hourText: objectL10n.hourText,
+			    minuteText: objectL10n.minuteText,
+			    secondText: objectL10n.secondText,
+			    millisecText: objectL10n.millisecText,
+			    timezoneText: objectL10n.timezoneText,
+			    closeText: objectL10n.closeText,
+			    currentText: objectL10n.currentTimeText
+		    });
       
     });
   },
@@ -177,7 +190,21 @@ var _metabox_fields = {
       var $this  = $(this),
           format = $this.attr('rel');
 
-      $this.datepicker( { showButtonPanel: true, dateFormat: format } );
+	    // Datapicker settings 
+	  	$this.datepicker({ 
+	  		showButtonPanel: true, 
+	  		dateFormat: format,
+		  	dayNames: eval('[' + objectL10n.dayNames + ']'),
+			  dayNamesMin: eval('[' + objectL10n.dayNamesMin + ']'),
+  			dayNamesShort: eval('[' + objectL10n.dayNamesShort + ']'),
+	  		monthNames: eval('[' + objectL10n.monthNames + ']'),
+		  	monthNamesShort: eval('[' + objectL10n.monthNamesShort + ']'),
+			  nextText: objectL10n.nextText,
+  			prevText: objectL10n.prevText,
+	  		currentText: objectL10n.currentText,
+		  	closeText: objectL10n.closeText,
+			  clearText: objectL10n.clearText  
+		  });
       
     });
   },
